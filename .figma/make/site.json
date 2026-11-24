@@ -1,0 +1,11 @@
+{
+  "title": "David Olamijulo — Security Engineer, Offensive Security & AppSec",
+  "description": "David Olamijulo is a security-focused engineer: offensive security and pentesting of agentic AI, phishing detection, application security audits, and the payment backends those controls protect.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

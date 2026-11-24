@@ -1,0 +1,15 @@
+#!/bin/sh
+set -euo pipefail
+ROOTDIR="$(dirname "$0")/.."
+cd "$ROOTDIR"
+
+# We do not translate requests through any server-side proxy, so there is
+# nothing for analyze-routes to report beyond the static HTML shell and the
+# framework's own asset routes.
+cat <<'EOF'
+There are no server-side routes to analyze.
+
+This project serves a single static HTML shell at / and a React app that
+renders everything client-side. All navigation is handled by the browser,
+not by a server router, so there are no server endpoints to document.
+EOF

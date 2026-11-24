@@ -1,0 +1,11 @@
+#!/bin/sh
+set -euo pipefail
+ROOTDIR="$(dirname "$0")/.."
+cd "$ROOTDIR"
+
+echo "Deploy preview is not available from this environment."
+echo ""
+echo "To get a deploy preview for your Figma Make site, open the Figma Make app"
+echo "and click Publish, or use the Sites dashboard at"
+echo "https://freebuff.com/dashboard/sites to connect this repository and"
+echo "publish your site."

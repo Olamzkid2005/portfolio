@@ -1,0 +1,10 @@
+#!/bin/sh
+set -euo pipefail
+ROOTDIR="$(dirname "$0")/.."
+cd "$ROOTDIR"
+
+echo "Deploy is not available from this environment."
+echo ""
+echo "To deploy your Figma Make site to the web, open the Figma Make app and"
+echo "click Publish, or use the Sites dashboard at https://freebuff.com/dashboard/sites"
+echo "to connect this repository and publish your site."

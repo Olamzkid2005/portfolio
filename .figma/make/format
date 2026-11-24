@@ -1,0 +1,11 @@
+#!/bin/sh
+set -euo pipefail
+ROOTDIR="$(dirname "$0")/.."
+cd "$ROOTDIR"
+
+if ! command -v pnpm >/dev/null 2>&1; then
+  echo "pnpm not found; falling back to npx."
+  exec npx --yes pnpm@10.34.3 format
+fi
+
+exec pnpm format
